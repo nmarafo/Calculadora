@@ -54,6 +54,7 @@ class _CalculadoraState extends State<Calculadora> {
     }
 
     setState(() {});
+    return(){};
   }
 
   Function funcion_decimal(){
@@ -75,6 +76,7 @@ class _CalculadoraState extends State<Calculadora> {
     esDecimal=true;
 
     setState(() {});
+    return (){};
   }
 
   @override
@@ -338,7 +340,7 @@ class _CalculadoraState extends State<Calculadora> {
                       onPressed: (){
                         double numero_uno=double.parse(conjunto_uno);
                         double numero_dos=double.parse(conjunto_dos);
-                        double total;
+                        double total=0;
                         if(estaSumando){
                           total=numero_uno+numero_dos;
                         }else if(estaRestando){
